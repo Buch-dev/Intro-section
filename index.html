@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="app.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <div class="logo-hamburger">
+        <img src="images/logo.svg" alt="logo">
+        <img src="images/icon-menu.svg" alt="menu" onclick="openNav()" class="hamburger">
+      </div>
+      <div id="mySidenav" class="sidenav" onmouseover="hideSubmenu()">
+        <img src="images/icon-close-menu.svg" alt="icon-close-menu" class="closebtn" onclick="closeNav()">
+          <div class="nav-items">
+            <div class="item">
+              <a href="#">Features
+                <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" onmouseover="showSubmenu()">
+              </a>
+              <div class="sub-menu" id="submenu">
+                <a href="#" class="submenu-item"><img src="images/icon-todo.svg" alt="icon-todo" > <span>Todo List</span></a>
+                <a href="#" class="submenu-item"><img src="images/icon-calendar.svg" alt="icon-calendar" > <span>Calender</span></a>
+                <a href="#" class="submenu-item"><img src="images/icon-reminders.svg" alt="icon-reminders" > <span>Reminders</span></a>
+                <a href="#" class="submenu-item"><img src="images/icon-planning.svg" alt="icon-planning" > <span>Planning</span></a>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#">Company
+                <img src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+              </a>
+              <div class="sub-menu">
+                <a href="#" class="submenu-item company-submenu">History</a>
+                <a href="#" class="submenu-item company-submenu">Our Team</a>
+                <a href="#" class="submenu-item company-submenu">Blog</a>
+              </div>
+            </div>
+            <div class="item"><a href="#">Careers</a></div>
+            <div class="item"><a href="#">About</a></div>
+          </div>
+          <div class="login-section">
+            <div class="item"><a href="#">Login</a></div>
+            <div class="register"><a href="#">Register</a></div>
+          </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="img">
+        <img src="images/image-hero-mobile.png" alt="image-hero-mobile" class="image-hero-mobile">
+        <img src="images/image-hero-desktop.png" alt="image-hero-desktop" class="image-hero-desktop">
+      </div>
+      <div class="text">
+        <h1>Make <br> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button>Learn more</button>
+          <div class="clients">
+            <img src="images/client-databiz.svg" alt="client-databiz">
+            <img src="images/client-audiophile.svg" alt="client-audiophile">
+            <img src="images/client-meet.svg" alt="client-meet">
+            <img src="images/client-maker.svg" alt="client-maker">
+          </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://buch-dev.GitHub.io/Daniel-Okafor/">Daniel Okafor</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 50em) {
+        width: 80%;
+    }
+}

@@ -1,0 +1,149 @@
+nav {
+    width: 90%;
+    margin: auto;
+
+    @media screen and (min-width: 50em) {
+        position: relative;
+    }
+}
+
+.logo-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.5rem auto;
+    
+    .hamburger {
+        cursor: pointer;
+
+        @media screen and (min-width: 50em) {
+            display: none;
+        }
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding: 1rem 0;
+    }
+
+    @media screen and (min-width: 50em) {
+        // border: 1px solid red;
+        flex-direction: row-reverse;
+        width: 76%;
+        margin: 5rem auto;
+    }
+}
+
+.img {
+    flex-basis: 40%;
+    img {
+        width: 100%;
+    }
+
+    .image-hero-desktop {
+        display: none;
+    }
+
+    @media screen and (min-width: 50em) {
+        .image-hero-mobile {
+            display: none;
+        }
+
+        .image-hero-desktop {
+            display: block;
+        }
+    }
+}
+
+.text {
+    flex-basis: 60%;
+    text-align: center;
+    margin-top: 1rem;
+
+    @media screen and (min-width: 50em) {
+        margin-top: 5rem;
+        text-align: left;
+    }
+
+    h1 {
+        color: $Almost-Black;
+        font-size: 2.2rem;
+
+        br {
+            display: none;
+        }
+
+        @media screen and (min-width: 50em) {
+            br {
+                display: block;
+            }
+
+            font-size: 4.5rem;
+            // line-height: 1.5;
+        }
+    }
+
+    p {
+        // border: 1px solid #000;
+        width: 90%;
+        margin:  .8rem auto;
+        line-height: 1.5;
+        color: $Medium-Gray;
+
+        @media screen and (min-width: 50em) {
+            margin: 2rem 0 0 0;
+            width: 65%;
+            // font-size: .8rem;
+            line-height: 1.8;
+        }
+    }
+
+    button {
+        border: none;
+        background: $Almost-Black;
+        color: $Almost-White;
+        padding: .8rem 1rem;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+
+        &:hover {
+            color: $Almost-Black;
+            background: transparent;
+            border: 1px solid $Almost-Black;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 50em) {
+            margin-top: 2rem;
+        }
+    }
+
+    
+    div {
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        // width: 70%;
+    
+        * {
+            width: 20%;
+        }
+    
+        @media screen and (min-width: 50em) {
+            text-align: left;
+            width: 70%;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
